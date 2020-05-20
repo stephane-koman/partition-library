@@ -6,3 +6,6 @@ build
 
 # Ignore IDE directory
 .idea
+
+# Ignore META-INF
+META-INF
