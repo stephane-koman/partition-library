@@ -4,11 +4,41 @@
 package com.adneom.stephanekoman;
 
 import org.junit.Test;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
+
+import org.junit.Assert;
 import static org.junit.Assert.*;
 
 public class LibraryTest {
-    @Test public void testSomeLibraryMethod() {
-        Library classUnderTest = new Library();
-        assertTrue("someLibraryMethod should return 'true'", classUnderTest.someLibraryMethod());
+    Library library = new Library();
+
+    @Test
+    public void testPartition() {
+        List<Integer> tab = Arrays.asList(1, 2, 3, 4, 5);
+        List<List<Integer>> res = Arrays.asList(Arrays.asList(1, 2), Arrays.asList(3, 4), Collections.singletonList(5));
+        Assert.assertEquals(res, this.library.partition(tab, 2));
+    }
+
+    @Test
+    public void testPartitionNullSize() {
+        List<Integer> tab = Arrays.asList(1, 2, 3);
+        List<List<Integer>> res = new ArrayList<List<Integer>>();
+        Assert.assertEquals(res, this.library.partition(tab, 0));
+    }
+
+    @Test
+    public void testPartitionNegativeSize() {
+        List<Integer> tab = Arrays.asList(1, 2, 3);
+        List<List<Integer>> res = new ArrayList<List<Integer>>();
+        Assert.assertEquals(res, this.library.partition(tab, -1));
+    }
+
+    @Test
+    public void testTrue() {
+        Assert.assertTrue(true);
     }
 }
