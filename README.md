@@ -46,11 +46,13 @@
 	 ```  
 	 - Initialiser la liste et la taille  
       ```java  
-	 List<Integer> listInt = Arrays.asList(3, 4, 6, 8, 9); int size = 2; 
+	 List<Integer> listInt = Arrays.asList(3, 4, 6, 8, 9); 
+     int size = 2; 
 	 ```  
 	 ou     
      ```java  
-	 List<String> listStr = Arrays.asList("A", "B", "C", "D", "E"); int size = 2; 
+	 List<String> listStr = Arrays.asList("A", "B", "C", "D", "E"); 
+     int size = 2; 
 	 ```  
 	 - Appeler la fonction partition de la classe Library  
    ```java   
