@@ -14,8 +14,8 @@
 ### Instruction d'installation de la librairie  
 1. Télécharger le fichier **partition-1.0.0.jar**, se trouvant dans le repertoire /libs ou cloner le projet et accéder au repertoire /libs  
 2. Copier le fichier **partition-1.0.0.jar** dans le repertoire /libs à la racine de votre projet Java [le créer s'il n'existe pas]  
-3. Importer le fichier **partition-1.0.0.jar** à dans votre projet  
-	* Configuration avec IntelliJ IDE  
+3. Importer le fichier **partition-1.0.0.jar** dans votre projet  
+	* Configuration avec **IntelliJ IDE**  
        - Ouvrir les paramètres du projet (Ctrl Alt Shift S)  
        - Dans le panneau Paramètres du projet à gauche, choisissez Modules  
        - Dans le volet droit plus grand, choisissez l'onglet Dépendances  
@@ -26,7 +26,7 @@
        - Appuyez sur "Attach Classes ..."  
        - Choisissez le Jar dans votre répertoire libs / et appuyez sur OK pour ignorer  
           
-   * Configuration avec Eclipse IDE  
+   * Configuration avec **Eclipse IDE**  
        - Faites un clic droit sur votre projet  
        - Sélectionnez Build Path  
        - Cliquez sur Configure Build Path  
@@ -34,7 +34,7 @@
        - Sélectionnez le fichier jar dans le dossier /libs  
        - Cliquez et appliquez et OK  
           
-   * Configuration avec VS Code : *[Suivre ce lien](https://stackoverflow.com/questions/50232557/visual-studio-code-java-extension-howto-add-jar-to-classpath/54535301#54535301)*  
+   * Configuration avec **VS Code** : *[Suivre ce lien](https://stackoverflow.com/questions/50232557/visual-studio-code-java-extension-howto-add-jar-to-classpath/54535301#54535301)*  
 4. Utilisation de la librairie  
    - Importer la librairie  
     ```java   
