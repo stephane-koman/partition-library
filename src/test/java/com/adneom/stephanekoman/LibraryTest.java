@@ -14,27 +14,35 @@ import org.junit.Assert;
 import static org.junit.Assert.*;
 
 public class LibraryTest {
-    Library library = new Library();
+    Library<Integer> libraryInt = new Library<Integer>();
+    Library<String> libraryStr = new Library<String>();
 
     @Test
-    public void testPartition() {
+    public void testPartitionInteger() {
         List<Integer> tab = Arrays.asList(1, 2, 3, 4, 5);
         List<List<Integer>> res = Arrays.asList(Arrays.asList(1, 2), Arrays.asList(3, 4), Collections.singletonList(5));
-        Assert.assertEquals(res, this.library.partition(tab, 2));
+        Assert.assertEquals(res, this.libraryInt.partition(tab, 2));
+    }
+
+    @Test
+    public void testPartitionStr() {
+        List<String> tab = Arrays.asList("A", "B", "D", "C", "X");
+        List<List<String>> res = Arrays.asList(Arrays.asList("A", "B"), Arrays.asList("D", "C"), Collections.singletonList("X"));
+        Assert.assertEquals(res, this.libraryStr.partition(tab, 2));
     }
 
     @Test
     public void testPartitionNullSize() {
         List<Integer> tab = Arrays.asList(1, 2, 3);
         List<List<Integer>> res = new ArrayList<List<Integer>>();
-        Assert.assertEquals(res, this.library.partition(tab, 0));
+        Assert.assertEquals(res, this.libraryInt.partition(tab, 0));
     }
 
     @Test
     public void testPartitionNegativeSize() {
         List<Integer> tab = Arrays.asList(1, 2, 3);
         List<List<Integer>> res = new ArrayList<List<Integer>>();
-        Assert.assertEquals(res, this.library.partition(tab, -1));
+        Assert.assertEquals(res, this.libraryInt.partition(tab, -1));
     }
 
     @Test
